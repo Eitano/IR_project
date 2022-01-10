@@ -36,7 +36,7 @@ The file contains all the code needed to run the engine in VM which includes rea
 <br>
 
 ### 2) Run_frontend_in_colab.ipynb: 
-  - A notebook showing how to run your search engine's frontend in Colab for development purposes. 
+  - A notebook showing how to run search engine's frontend in Colab for development purposes. 
 
 <br>
 
