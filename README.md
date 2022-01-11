@@ -14,7 +14,7 @@ PageRank for wiki articles using the anchor text we extracted from the MediaWiki
 - Queries and a ranked list of up to 100 relevant results for them, split into train (30 queries results given to you in queries_train.json).
 
 # Files:
-### 1)  Search_frontend.py:
+## 1)  Search_frontend.py:
 A Flask app for search engine frontend. It has six methods implement:
 
   - Search - using Okapi BM25 on anchor text, title, and body text of the articles.
@@ -35,12 +35,17 @@ The file contains all the code needed to run the engine in VM which includes rea
 
 <br>
 
-### 2) InvertedIndex.ipynb: 
+## 2)  Score.py:
+  - A class contains the logical function of retrieving the candidate page match to the corresponding query to search for the above class.
+     
+<br>
+
+## 3) InvertedIndex.ipynb: 
   - An InvertedIndex module.
 
 <br>
 
-### 3) Preprocessing.ipynb:
+## 4) Preprocessing.ipynb:
 Preprocessing file contains all the logic of information retrieval from Wikipedia, creating bins, posting list, inverted indexes, and as well other statistics calculations.
 The code runs on GCP and works with MapReduce.
 
@@ -49,3 +54,4 @@ The code runs on GCP and works with MapReduce.
   - Finding candidates page from the corpus which contains the word in the query.
   - Call one of the functions at Search_frontend.py -  [Search, Cosine_ similarity, Binary title or anchor].
   - Retrieve the match id pages sorted by their match relevance score.
+
