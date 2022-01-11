@@ -167,9 +167,7 @@ class score:
                                                                 value: tf/tfidf/bm25 score.
         """
 
-        # strings = list(map(lambda x: x[0], model.most_similar(query_vector, topn=3)))
-        # query_vector += strings
-        # more_tokens = []
+       
         words_in_index = index.df.keys()
         candidates = {}
 
@@ -226,11 +224,7 @@ class score:
             query_to_search = sorted(query_to_search)
 
         candidates = self.get_candidate_documents_and_scores(query_to_search, index)
-        ls = []
-        for key in candidates.keys():
-            ls.append(key[0])
-        print(Counter(ls).most_common(4))
-
+     
 
         #calculate the order of the retrival documents and return
         if ranking_method == "binary":
