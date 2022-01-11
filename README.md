@@ -40,7 +40,7 @@ The file contains all the code needed to run the engine in VM which includes rea
      
 <br>
 
-## 3) InvertedIndex.ipynb: 
+## 3) InvertedIndex.py: 
   - An InvertedIndex module.
 
 <br>
